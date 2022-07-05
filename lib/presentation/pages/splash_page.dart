@@ -22,7 +22,7 @@ class _SplashPageState extends State<SplashPage> {
   }
 
   void _popupSplashImage() async {
-    WidgetsBinding.instance!.addPostFrameCallback((_) {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
       opacityValue = 1.0;
     });
     Future.delayed(const Duration(seconds: 3)).then((value) =>
